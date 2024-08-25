@@ -1,0 +1,24 @@
+.reports-page {
+    background-color: var(--siteBGColor);
+    min-height: 1000px;
+}
+
+.reports {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 0px auto;
+    padding: 10px;
+    border: 1px solid var(--siteBorderColor);
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 5px rgb(0 0 0 / .2);
+}
+
+.report {
+    height: 300px;
+    border: 1px solid rgba(128, 128, 128, 0.25);
+    border-radius: 5px;
+    width: 350px;
+}

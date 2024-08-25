@@ -1,0 +1,38 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color: var(--siteBGColor);
+}
+
+.site-links {
+    display: flex;
+    align-items: center;
+}
+
+.user-links {
+    display: flex;
+    align-items: center;
+}
+
+.site-links a,
+.user-links a {
+    margin: 0px 15px;
+    text-decoration: none;
+}
+
+.site-links a:hover,
+.user-links a:hover,
+.logout:hover {
+    opacity: 50%;
+}
+
+.greeting {
+    text-transform: capitalize;
+    margin-right:15px;
+}
+
+.logout {
+    cursor: pointer;
+    margin-right:30px;
+}

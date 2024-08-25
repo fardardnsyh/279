@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --siteBorderColor: rgba(0, 0, 0, 0.1);
+  --siteFieldBorderColor:  rgba(0, 0, 0, 0.8);
+  --siteFontColor: rgba(0, 0, 0, 0.5);
+  --hoverBGColor: rgba(0, 0, 0, 0.025);
+  --validationColor: red; 
+  --firstColor: #ececec; 
+  --secondColor: #9fd3c7;
+  --thirdColor: rgba(80, 124, 213, 0.507); 
+  --fourthColor: #142d4c;
+  --navBGColor: #25b4b977;
+  --cardColor: #2ab92534;
+  --siteBGColor: rgba(127, 255, 212, 0.137);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial;
+  font-size: 14px;
+  color: var(--siteFontColor);
+}
+

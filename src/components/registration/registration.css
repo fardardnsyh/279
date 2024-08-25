@@ -1,0 +1,59 @@
+.registration-page {
+    background-color: var(--siteBGColor);
+    height: 1000px;
+}
+
+.registration {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    border-radius: 10px;
+    margin: 0px auto;
+    height: 300px;
+    background-color: white;
+    box-shadow: 5px 5px rgb(0 0 0 / .2);
+    padding: 40px 0px;
+}
+
+.registration-header {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.validation {
+    border-bottom: 1px solid var(--siteBorderColor);
+}
+
+.registration > * {
+    margin-top: 10px;
+}
+
+.registration-username,
+.registration-password1,
+.registration-password2 {
+    text-indent: 5px;
+    border-radius: 5px;
+}
+
+.registration-username:hover,
+.registration-password1:hover,
+.registration-password2:hover {
+    background-color: var(--firstColor);
+    cursor: pointer;
+}
+
+.registration-btn {
+    color: var(--siteFontColor);
+    background-color: var(--thirdColor);
+    border-radius: 5px;
+    width: 120px;
+    height: 30px;
+    box-shadow: 5px 5px rgb(0 0 0 / .2);
+}
+
+.registration-btn:hover {
+    background-color: var(--secondColor);
+    cursor: pointer;
+}

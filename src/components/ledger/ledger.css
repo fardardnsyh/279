@@ -1,0 +1,117 @@
+.ledger-page {
+    background-color: var(--siteBGColor);
+    min-height: 1000px;
+}
+
+.ledger {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0px auto;
+    border: 1px solid var(--siteBorderColor);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 5px rgb(0 0 0 / .2);
+}
+
+.ledger-header,
+.ledger-item,
+.new-ledger-item,
+.ledger-filter {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr 1fr 1fr;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.ledger-header,
+.ledger-item {
+    border: 1px solid var(--siteBorderColor);
+    border-radius: 5px;
+}
+
+.new-ledger-item,
+.ledger-filter {
+    margin: 20px 0px 20px 0px;
+}
+
+.ledger-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0px 40px 0px;
+    padding-top: 20px;
+    border-top: 1px solid var(--siteBorderColor);
+}
+
+.ledger-header {
+    background-color: var(--firstColor);
+}
+
+.ledger-item:hover {
+    background-color: var(--secondColor);
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.ledger-item-delete:hover {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.new-ledger-item {
+    margin: 30px 0px 0px 0px;
+}
+
+.ledger-filter > *,
+.new-ledger-item > * {
+    margin: 0px 10px;
+    border: 1px solid var(--siteFieldBorderColor);
+    border-radius: 5px;
+    width: 90%;
+}
+
+.ledger-filter > *:hover,
+.new-ledger-item > *:hover {
+    background-color: var(--firstColor);
+    cursor: pointer;
+}
+
+.ledger-filter input,
+.new-ledger-item input {
+    text-indent: 5px;
+}
+
+.ledger-filter-btn,
+.ledger-clear-btn,
+.add-btn {
+    color: var(--siteFontColor);
+    background-color: var(--thirdColor);
+    border-radius: 5px;
+    width: 80px;
+    height: 20px;
+    box-shadow: 5px 5px rgb(0 0 0 / .2);
+    
+}
+
+.ledger-filter-btn:hover,
+.ledger-clear-btn:hover,
+.add-btn:hover {
+    background-color: var(--secondColor);
+    cursor: pointer;
+}
+
+
+/* Removing arrows for amount input field*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
